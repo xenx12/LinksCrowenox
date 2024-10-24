@@ -47,27 +47,51 @@
             position: static;
         }
 
-        #botonera {
-            position: static;
-            background-image: url('img/fondo2.jpg');
-            background-size: cover; /* Ajusta la imagen sin recortarla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* No repite la imagen */
-            height: 60vh; /* Asegura que cubra toda la altura de la página */
+        #titulo3 {
+            color: #f29921; 
+            font-family: 'Helvetica Neue', Courier; 
+            width: 100%;
+            font-size: 1.3em;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: auto; /* Asegura que cubra toda la altura de la ventana */
             margin: 0; /* Elimina márgenes */
-            margin-top: 10%;
-            box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
-            opacity: 0.7;
-            border-top: 3px solid black;
+            text-align: center;
+            position: absolute;
+            margin-top: 15%;
+            z-index: 2;
+
         }
 
-        #boton_madera {
-            width: 80%;
-            margin-left: 3%;
-            margin-top: 5%;
-            
-            
+        #botonera {
+            position: relative;
+            background-image: url('img/fondo2.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 60vh;
+            margin: 0; 
+            margin-top: 10%;
+            box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
+            border-top: 3px solid black;
+            overflow: hidden; /* Asegura que el pseudoelemento no sobresalga */
         }
+
+        #botonera::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Opacidad solo en el fondo */
+            z-index: 1;
+        }
+
+        
+
+
     </style>
 </head>
 <body>
@@ -75,12 +99,10 @@
         <span id="titulo">Crowenox</span>
         <span id="titulo2">Tu Streamer de Albion Favorito</span>
 
+        <span id="titulo3">DESCUBRE MIS REDES</span>
 
         <div id="botonera">  
-            <div id="boton_madera">
-                <img src="img/boton_madera.png" width="380vh" height="70vh">
-            </div>
-        
+
 
         </div>
 
