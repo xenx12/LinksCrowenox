@@ -29,11 +29,62 @@
             margin: 0; /* Elimina márgenes */
             text-align: center;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            position: static;
+            padding-top: 5%;
+        }
+        #titulo2 {
+            color: white; 
+            font-family: 'Helvetica Neue', Courier; 
+            width: 100%;
+            font-size: 1em;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: auto; /* Asegura que cubra toda la altura de la ventana */
+            margin: 0; /* Elimina márgenes */
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            position: static;
+        }
+
+        #botonera {
+            position: static;
+            background-image: url('img/fondo2.jpg');
+            background-size: cover; /* Ajusta la imagen sin recortarla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* No repite la imagen */
+            height: 60vh; /* Asegura que cubra toda la altura de la página */
+            margin: 0; /* Elimina márgenes */
+            margin-top: 10%;
+            box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
+            opacity: 0.7;
+            border-top: 3px solid black;
+        }
+
+        #boton_madera {
+            width: 80%;
+            margin-left: 3%;
+            margin-top: 5%;
+            
+            
         }
     </style>
 </head>
 <body>
-    <div id="contenido"></div>
-    <span id="titulo">Crowenox</span>
+    <div id="contenido">
+        <span id="titulo">Crowenox</span>
+        <span id="titulo2">Tu Streamer de Albion Favorito</span>
+
+
+        <div id="botonera">  
+            <div id="boton_madera">
+                <img src="img/boton_madera.png" width="380vh" height="70vh">
+            </div>
+        
+
+        </div>
+
+
+    </div>
 </body>
 </html>
