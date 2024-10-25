@@ -254,6 +254,21 @@ border: 2px solid #00acee; /* Línea del borde */border-radius: 12px; /* Bordes 
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
 
 }
+
+/* Estilos del contenedor de navegación */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px;
+  }
+
+  /* Estilos del logo */
+  .logo {
+    width: 60px; /* Ajusta el tamaño del logo según prefieras */
+    height: auto;
+  }
         
 
 
@@ -261,7 +276,9 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
 </head>
 <body>
     <div id="contenido">
-        <span id="titulo">Crowenox</span>
+        <div class="nav-bar">
+            <img src="img/albion_logo.png" alt="Logo" class="logo">
+          </div>        <span id="titulo">Crowenox</span>
         <span id="titulo2">Tu Streamer de Albion Favorito</span>
 
         <span id="titulo3">DESCUBRE MIS REDES</span>
@@ -271,17 +288,17 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
             <span class="twitch-text">Hago directos por la mañana y cuando mi esposa me deja, puedes verme jugando albion.</span>
           </a>
 
-          <a href="https://www.twitch.tv" target="_blank" id="tiktok">
+          <a href="https://www.tiktok.com/" target="_blank" id="tiktok">
             <img src="img/tiktok_icon.png" alt="Logo de Twitch" id="tiktok-logo">
             <span id="tiktok-text">En mi canal de tiktok encontraras perros y gatos y un pajarito. asdasd sadasdasd asd.</span>
         </a>
 
-        <a href="https://www.twitch.tv" target="_blank" id="youtube">
+        <a href="https://www.youtube.com" target="_blank" id="youtube">
             <img src="img/youtube_icon.png" alt="Logo de Twitch" id="youtube-logo">
             <span id="youtube-text">En mi canal de youtube encontraras perros y gatos y un pajarito. asdasd sadasdasd asd.</span>
         </a>
 
-        <a href="https://www.twitch.tv" target="_blank" id="x-div">
+        <a href="https://www.x.com" target="_blank" id="x-div">
             <img src="img/x_icon.png" alt="Logo de Twitch" id="x-logo">
             <span id="x-text">En mi canal de youtube encontraras perros y gatos y un pajarito. asdasd sadasdasd asd.</span>
         </a>
