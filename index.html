@@ -107,7 +107,7 @@
     text-decoration: none; /* Quita subrayado en enlaces */
   }
 
-  /* Estilos del logo */
+    /* Estilos del logo */
   .twitch-logo {
     
     width: 40px; /* Ajusta el tamaño del logo */
@@ -131,6 +131,88 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
 
   }
+
+  #youtube {
+
+    margin-top: 75%;
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 85%; /* Ajusta el ancho según prefieras */
+    cursor: pointer;
+    text-decoration: none; /* Quita subrayado en enlaces */
+    }
+
+  /* Estilos del logo */
+  #youtube-logo {
+    
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #ff0000; /* Línea del borde */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+  }
+
+  /* Estilos del texto */
+  #youtube-text {
+    font-family: 'Helvetica Neue', Courier; 
+    font-size: 1em;
+    color: rgb(0, 0, 0); /* Color de texto */
+    height: 64px;
+    padding: 10px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #ff0000; /* Línea del borde */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+
+  }
+
+  #tiktok {
+
+margin-top: 50%;
+position: absolute;
+z-index: 2;
+
+display: flex;
+align-items: center;
+padding: 10px 20px;
+border-radius: 8px;
+width: 85%; /* Ajusta el ancho según prefieras */
+cursor: pointer;
+text-decoration: none; /* Quita subrayado en enlaces */
+}
+
+/* Estilos del logo */
+#tiktok-logo {
+
+width: 40px; /* Ajusta el tamaño del logo */
+height: 40px;
+margin-right: 10px;
+padding: 10px;
+border: 2px solid; /* Define el grosor del borde */
+border-image: linear-gradient(45deg, #FE2C55, #25F4EE) 1; 
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+}
+
+/* Estilos del texto */
+#tiktok-text {
+font-family: 'Helvetica Neue', Courier; 
+font-size: 1em;
+color: rgb(0, 0, 0); /* Color de texto */
+height: 64px;
+padding: 10px;
+border: 2px solid; /* Define el grosor del borde */
+border-image: linear-gradient(45deg, #FE2C55, #25F4EE) 1; /* Borde de dos colores estilo TikTok */
+border-radius: 12px; /* Bordes redondeados */
+
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+
+}
         
 
 
@@ -145,8 +227,20 @@
 
         <a href="https://www.twitch.tv" target="_blank" class="twitch-div">
             <img src="img/twitch_icon.png" alt="Logo de Twitch" class="twitch-logo">
-            <span class="twitch-text">Lorem ipsum dolor sit, aelit. Vero nisi harum suscipit iure quasi saepe anditiis tempore!</span>
+            <span class="twitch-text">Hago directos por la mañana y cuando mi esposa me deja, puedes verme jugando albion.</span>
           </a>
+
+          <a href="https://www.twitch.tv" target="_blank" id="tiktok">
+            <img src="img/tiktok_icon.png" alt="Logo de Twitch" id="tiktok-logo">
+            <span id="tiktok-text">En mi canal de tiktok encontraras perros y gatos y un pajarito. asdasd sadasdasd asd.</span>
+        </a>
+
+        <a href="https://www.twitch.tv" target="_blank" id="youtube">
+            <img src="img/youtube_icon.png" alt="Logo de Twitch" id="youtube-logo">
+            <span id="youtube-text">En mi canal de youtube encontraras perros y gatos y un pajarito. asdasd sadasdasd asd.</span>
+        </a>
+
+        
 
         <div id="botonera">  
 
