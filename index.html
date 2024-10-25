@@ -271,7 +271,29 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
   }
         
 
+  #mas_informacion {
+            position: relative;
+            background-color: #000000;
+            width: 100%;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: auto;
+            margin: 0; 
+            margin-top: 10%;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden; /* Asegura que el pseudoelemento no sobresalga */
+            
+        }
 
+        #general-text {
+        font-family: 'Helvetica Neue', Courier; 
+        color: rgb(255, 255, 255); /* Color de texto */
+        
+
+        }
+
+        
     </style>
 </head>
 <body>
@@ -310,6 +332,15 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
         
 
         <div id="botonera">  
+
+
+        </div>
+
+        <div id="mas_informacion"> 
+             <center>
+            <span id="general-text" style=" text-align: center; font-size: 1.5em;">Mira ultimo video de Youtube</span>
+        </center>
+            <iframe style="margin-left: 10%; margin-top: 15px;" width="80%" height="300px" src="https://www.youtube.com/embed/JoSeg0iCdbk?si=-zKJ1mT4sNuxP_aB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
         </div>
