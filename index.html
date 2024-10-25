@@ -74,7 +74,6 @@
             margin: 0; 
             margin-top: 10%;
             box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
-            border-top: 3px solid black;
             overflow: hidden; /* Asegura que el pseudoelemento no sobresalga */
         }
 
@@ -89,6 +88,43 @@
             z-index: 1;
         }
 
+
+        /* Estilos del contenedor */
+  .twitch-div {
+
+    margin-top: 25%;
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 300px; /* Ajusta el ancho según prefieras */
+    cursor: pointer;
+    text-decoration: none; /* Quita subrayado en enlaces */
+  }
+
+  /* Estilos del logo */
+  .twitch-logo {
+    
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #9146FF; /* Línea del borde */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+  }
+
+  /* Estilos del texto */
+  .twitch-text {
+    font-family: 'Helvetica Neue', inherit; 
+    font-size: 1em;
+    font-weight: bold;
+    color: white; /* Color de texto */
+
+  }
         
 
 
@@ -100,6 +136,11 @@
         <span id="titulo2">Tu Streamer de Albion Favorito</span>
 
         <span id="titulo3">DESCUBRE MIS REDES</span>
+
+        <a href="https://www.twitch.tv" target="_blank" class="twitch-div">
+            <img src="img/twitch_icon.png" alt="Logo de Twitch" class="twitch-logo">
+            <span class="twitch-text">Síguenos en Twitch</span>
+          </a>
 
         <div id="botonera">  
 
